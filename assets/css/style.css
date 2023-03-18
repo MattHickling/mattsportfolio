@@ -1392,3 +1392,39 @@ button, input, textarea:focus {
 	width: 100%;
     height: 300px;
 }
+
+  
+  .cd-words-wrapper b:nth-child(2),
+.cd-words-wrapper b:nth-child(3) {
+  white-space: nowrap;
+}
+
+.cd-words-wrapper b {
+	display: inline-block;
+	white-space: nowrap;
+  }
+  
+
+  .cd-words-wrapper {
+	font-size: 0;
+	white-space: nowrap;
+	overflow: hidden;
+  }
+  
+  .cd-words-wrapper b {
+	display: inline-block;
+	font-size: 3.5rem;
+	vertical-align: top;
+  }
+  
+  .cd-words-wrapper b.is-visible {
+	position: relative;
+	z-index: 1;
+  }
+  
+  .blc{
+	font-size: 3.5rem;
+  }
+  
+
+  
