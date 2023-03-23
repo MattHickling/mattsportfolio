@@ -1436,6 +1436,22 @@ button, input, textarea:focus {
 	display: inline;
   }
    */
+   @media screen and (min-width: 320px) and (max-width: 767px) {
+	.cd-headline {
+	  font-size: 0.5rem; 
+	  max-width: 80%; 
+	  margin: 0 auto; 
+	  text-align: center; 
+	} 
+	.cd-words-wrapper b {
+	  font-size: 2rem;
+	  margin: 0;
+	}
+	.blc {
+	  font-size: 2rem;
+	  margin-right: 5px;
+	}
+  }
   
   @media (max-width: 767px) {
 	.cd-headline {
