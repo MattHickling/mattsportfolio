@@ -1426,5 +1426,34 @@ button, input, textarea:focus {
 	font-size: 3.5rem;
   }
   
+  html,
+  body,
+  header {
+	height: 100%;
+  }
 
+  /* .blc, .cd-words-wrapper b {
+	display: inline;
+  }
+   */
+  
+  @media (max-width: 767px) {
+	.cd-headline {
+		font-size: 0.5rem; 
+		max-width: 80%; 
+	 	margin: 0 auto; 
+		text-align: center; 
+	} 
+	.cd-words-wrapper b {
+		font-size: 1.4rem;
+		margin: 0;
+	}
+	.blc {
+		font-size: 1.4rem;
+		margin-right: 5px;
+	}
+	
+}
+
+  
   
