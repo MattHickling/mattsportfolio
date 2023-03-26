@@ -1468,8 +1468,52 @@ button, input, textarea:focus {
 		font-size: 1.4rem;
 		margin-right: 5px;
 	}
+	.about-img-wrapper {
+	
+		margin: 0 auto; 
+	} 
+  
+	.about-img-wrapper img {
+		width: auto;
+		height: 40rem;
+	} 
 	
 }
 
+ .about-img-wrapper {
+	display: inline-block;
+	
+  } 
   
-  
+  .about-img-wrapper img {
+	width: auto;
+	height: 40rem;
+  }
+   
+  @media (min-width: 768px) {
+	.row {
+		display: flex;
+		align-items: stretch;
+	}
+	
+	.about-img-wrapper {
+		flex: 1;
+		margin-right: 3rem;
+	}
+	
+	.about-img-wrapper img {
+		max-width: 100%;
+		height: auto;
+		height: 100%;
+	}
+	
+	.about-content {
+		flex: 2;
+	}
+}
+
+
+
+ 
+
+ 
