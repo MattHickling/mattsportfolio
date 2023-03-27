@@ -1420,46 +1420,108 @@ button, input, textarea:focus {
   .cd-words-wrapper b.is-visible {
 	position: relative;
 	z-index: 1;
-  }
-  
-  .blc{
-	font-size: 3.5rem;
-  }
-  
-  html,
-  body,
-  header {
-	height: 100%;
-  }
+}
 
-  /* .blc, .cd-words-wrapper b {
-	display: inline;
-  }
-   */
-   @media screen and (min-width: 320px) and (max-width: 767px) {
+.blc {
+	font-size: 3.5rem;
+}
+
+html,
+body,
+header {
+	height: 100%;
+}
+@media screen and (max-width: 320px){
 	.cd-headline {
-	  font-size: 0.5rem; 
-	  max-width: 80%; 
-	  margin: 0 auto; 
-	  text-align: center; 
-	} 
+		font-size: 0.5rem;
+		max-width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	  }
+	
+	  .cd-words-wrapper b {
+		font-size: 2rem;
+		margin: 0;
+	  }
+	
+	  .blc {
+		font-size: 2rem;
+		margin-right: 5px;
+	  }
+	
+	  .about-img-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	   
+	  }
+
+	  .about-img-wrapper img {
+		max-width: 100%;
+		height: auto;
+		margin-left: 35%;
+	  }
+	
+	  .about-img-wrapper {
+		border: none;
+		padding: 0;
+	  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.cd-headline {
+	  font-size: 0.5rem;
+	  max-width: 80%;
+	  margin: 0 auto;
+	  text-align: center;
+	}
+  
 	.cd-words-wrapper b {
 	  font-size: 2rem;
 	  margin: 0;
 	}
+  
 	.blc {
 	  font-size: 2rem;
 	  margin-right: 5px;
 	}
+  
+	.about-img-wrapper {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  text-align: center;
+	  width: 100%;
+	  height: auto;
+	  margin: 0 auto;
+	 
+	}
+  
+	.about-img-wrapper img {
+	  max-width: 100%;
+	  height: auto;
+	  margin-left: 23%;
+	}
+  
+	.about-img-wrapper {
+	  border: none;
+	  padding: 0;
+	}
   }
   
-  @media (max-width: 767px) {
+
+
+@media (max-width: 767px) {
 	.cd-headline {
-		font-size: 0.5rem; 
-		max-width: 80%; 
-	 	margin: 0 auto; 
-		text-align: center; 
-	} 
+		font-size: 0.5rem;
+		max-width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
 	.cd-words-wrapper b {
 		font-size: 1.4rem;
 		margin: 0;
@@ -1469,42 +1531,45 @@ button, input, textarea:focus {
 		margin-right: 5px;
 	}
 	.about-img-wrapper {
+		width: 100%;
+		height: auto;
+		margin-right: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
 	
-		margin: 0 auto; 
-	} 
-  
-	.about-img-wrapper img {
-		width: auto;
-		height: 40rem;
-	} 
-	
+	  .about-img-wrapper img {
+		max-width: 100%;
+		height: auto;
+	  }
 }
 
- .about-img-wrapper {
-	display: inline-block;
-	
-  } 
-  
-  .about-img-wrapper img {
+.about-img-wrapper {
+	float: right;
+	display: flex;
+}
+
+.about-img-wrapper img {
 	width: auto;
-	height: 40rem;
-  }
-   
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
 	.row {
 		display: flex;
-		align-items: stretch;
+		align-items: center;
 	}
-	
+
 	.about-img-wrapper {
+		display: inline-block;
 		flex: 1;
 		margin-right: 3rem;
+		/* float: right; */
 	}
-	
+
 	.about-img-wrapper img {
 		max-width: 100%;
 		height: auto;
-		height: 100%;
 	}
 	
 	.about-content {
@@ -1512,8 +1577,66 @@ button, input, textarea:focus {
 	}
 }
 
-
-
- 
-
- 
+.skills-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+  
+  .skills-wrapper ul {
+	list-style-type: disc;
+	margin-left: 50px;
+	padding-left: 0rem;
+	flex-wrap: wrap;
+  }
+  
+  .skills-wrapper ul li {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+  }
+  
+  .skills-wrapper .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+  
+  .skills-wrapper .col-md-6 {
+	width: 45%;
+  }
+  
+  .skills-wrapper h6 {
+	margin-bottom: 20px;
+	font-size: 20px;
+  }
+  
+  .skill-item {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 15px;
+  }
+  
+  .skill-title {
+	margin-bottom: 10px;
+	font-size: 18px;
+  }
+  
+  .skills-left, .skills-right {
+	width: 50%;
+	float:right;
+	padding-left: 15rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+	.skills-left, .skills-right {
+	  width: 100%;
+	  float: none;
+	  padding-left: 0;
+	}
+  
+	.skills-wrapper ul {
+	  margin-left: 8%;
+	}
+  }
+  
